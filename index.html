@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Guess-a-word</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stylesheets/game.css" />
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="javascripts/random-word.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="tree">
+      <script type="text/x-handlebars" id="apples-template">
+        <div id="apples" class="guess_{{number}}"></div>
+      </script>
+    </div>
+    <p id="message"></p>
+    <p><a id="replay" href="#">Play another</a></p>
+
+    <div id="spaces">
+      <h2>Word:</h2>
+    </div>
+
+    <div id="guesses">
+      <h2>Guesses:</h2>
+    </div>
+  </main>
+  <script src="javascripts/game.js"></script>
+</body>
+
+</html>
